@@ -1,6 +1,6 @@
 {
     "name": "lazy-preload",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Wraps the React.lazy API with preloaded functionality",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
