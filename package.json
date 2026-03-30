@@ -27,7 +27,10 @@
     "lint": "eslint -f codeframe --ext .js,.ts,.tsx src/",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "lint:check": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {},
   "devDependencies": {

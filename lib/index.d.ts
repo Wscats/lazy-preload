@@ -8,8 +8,8 @@ export declare type PreloadableComponentPreload = {
     preload: () => Promise<void>;
     isLoaded: boolean;
 };
-export declare type PreloadableComponent<T extends ComponentType<any>> = T & PreloadableComponentPreload;
-export declare function lazyWithPreload<T extends ComponentType<any>>(factory: () => Promise<{
+export declare type PreloadableComponent<T extends ComponentType<unknown>> = T & PreloadableComponentPreload;
+export declare function lazyWithPreload<T extends ComponentType<unknown>>(factory: () => Promise<{
     default: T;
 }>): PreloadableComponent<T>;
 export declare function LazyLoadComponent(props: {
